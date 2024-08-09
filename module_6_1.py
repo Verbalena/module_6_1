@@ -8,11 +8,11 @@ class Animal:            # БАЗОВЫЙ класс Животные
         Plant.name = food
         if food.edible == True:
             print(f'{self.name} съел {food.name}')
-            Animal.fed = True
+            self.fed = True
         else:
             if food.edible == False:
                 print(f'{self.name} не стал есть {food.name}')
-                Animal.alive = False
+                self.alive = False
 class Mammal(Animal):    # дочерний класс
     pass
 class Predator(Animal):  # дочерний класс
